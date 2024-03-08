@@ -1,0 +1,221 @@
+body {
+    margin: 0px 20px 0px 20px;
+    font-family: "RM Neue", sans-serif;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(240, 247, 255, 1) 114%);
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo img {
+    max-width: 20%; 
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav a {
+    color: #0276FF;
+    font-size: 16px;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: grey;
+  }
+  
+  .Join {
+    align-items: center;
+    background-color: #274798;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    padding: 10px 21px;
+    text-align: center;
+    text-transform: none;
+    transition: color 0.3s ease, background 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Join:hover {
+    background-color: grey;
+  }
+  
+  /* Mobile and Tablet Styles */
+  @media screen and (max-width: 768px) {
+    nav {
+      display: none; 
+    }
+    .logo img {
+      max-width: 20%; 
+    }
+    .Join {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    nav {
+      display: none; 
+    }
+    .logo img {
+      max-width: 50%; 
+    }
+    .Join {
+      display: none;
+    }
+  }
+  
+  
+  .hero {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text-hero {
+    width: 90%; 
+    text-align: center; 
+  }
+  
+  .text-hero h3 {
+    font-size: 24px;
+    margin: 0;
+    color: #274798;
+    text-transform: uppercase;
+  }
+  
+  .text-hero h1 {
+    color: #274798;
+    font-size: 36px; 
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  
+  .text-hero p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .image-hero {
+    padding: 20px;
+  }
+  
+  .image-hero img {
+    width: 100%; 
+    height: auto;
+  }
+  
+  /* Media Queries for Tablet */
+  @media screen and (min-width: 768px) {
+    .hero {
+      flex-direction: row; 
+      justify-content: space-between; 
+      align-items: center;
+    }
+  
+    .text-hero {
+      width: 50%; 
+      padding-left: 30px;
+      text-align: left; 
+    }
+  
+    .image-hero img {
+      width: 80%; 
+      padding-left: 0; 
+    }
+  }
+  
+  /* Media Queries for Mobile */
+  @media screen and (max-width: 480px) {
+    .text-hero h1 {
+      font-size: 24px; 
+    }
+  }
+  
+  h4 {
+    text-align: center;
+    color: #274798;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 4fr);
+    gap: 10px;
+    margin: 0 130px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 20%;
+    height: auto;
+  }
+  
+  .title {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Media Query for Small Devices And Not The Same Thing FoR Tablets */
+  @media screen and (max-width: 767px) {
+    .grid-container {
+      grid-template-columns: 1fr; 
+      margin: 0 20px; 
+    }
+  }
+  
+  footer {
+    padding: 20px;
+    padding-top: 40px;
+    font-family: "RM Neue", sans-serif;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  
